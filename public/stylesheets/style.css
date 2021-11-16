@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.btn-mario{
+  color:white;
+  background-color: black!important;
+}
+
+nav{
+  margin-bottom: 15px;
+}
+
+.catimage{
+  display:block;
+  margin:0 auto;
+  width: 50%;
+}

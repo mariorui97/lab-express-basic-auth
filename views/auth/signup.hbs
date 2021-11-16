@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://toppng.com/uploads/preview/cat-11525956124t37pf0dhfz.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Sign Up
+    </a>
+  </div>
+</nav>
+
+<form action='/signup' method='POST'>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Username:</span>
+  </div>
+  <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Password:</span>
+</div>
+<input type="password" name="password" class="form-control" placeholder="Insert your password here!" aria-label="Insert your password here!" aria-describedby="basic-addon2">
+
+</div>
+<button type="submit" class="btn btn-primary btn-sm" >Log In</button>
+</form>
+
+{{#if error}}
+    <p class ="error">Message: {{error}}</p>
+{{/if}}
